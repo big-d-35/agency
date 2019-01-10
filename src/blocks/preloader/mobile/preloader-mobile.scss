@@ -1,0 +1,65 @@
+.preloader {
+    display: flex;
+    position: absolute;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100vw;
+    height: 100vh;
+    background: url(/dist/img/bg-preloder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 20;
+    &__second-title {
+        
+        color: $preloader-font-color;
+        font-family: $preloader-ff;
+        font-size: $preloader-second-title-fs;
+        font-weight: bolder;
+        line-height: 0.8;
+        margin: 0;
+        text-shadow: 10px 0px 50px hsla(276, 100%, 100%, 0.02);
+    }
+    &__first-title {
+        color: $preloader-font-color;
+        font-family: $preloader-ff;
+        font-size: $preloader-first-title-fs;
+        
+    }
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 200px bottom;
+  }
+}
+@keyframes loading-animation {
+  0% {
+    background-size: 200px 0px;
+  }
+  100% {
+    background-size: 300px 300px;
+  }
+}
+.wave {
+  background-image: url("http://i66.tinypic.com/optxd3.png");
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px rgba(255, 255, 255, 0.01);
+  animation: wave-animation 4.5s , loading-animation 4.5s   ;
+    animation-fill-mode: forwards;
+  background-size: 200px 100px;
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+
