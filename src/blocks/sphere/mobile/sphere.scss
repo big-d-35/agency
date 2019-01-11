@@ -1,13 +1,13 @@
-$sphere-size: 20vmin;
+$sphere-size: 30vmin;
 
 @mixin absolutely {
-  position: absolute;
-  top:0;right:0;bottom:40%;left:0;
+  position: fixed;
+  top:0;right:0;bottom:60%;left:0;
   margin:  auto;
 }
 
 #canvas {
-    position: absolute;
+    position: fixed;
   z-index: 0;
   display: block;
   width: 100vw;
@@ -27,14 +27,14 @@ $sphere-size: 20vmin;
   @include absolutely();
   width: $sphere-size;
   height: $sphere-size;
-  border-radius: 50%;
+  border-radius: 80%;
   overflow: hidden;
 }
 
 
 @for $i from 1 through 36 {
   [class$="#{$i}"] {
-    transform: rotateY($i * 2deg) rotateX($i*2deg) rotateZ($i * 3deg);
+    transform: rotateY($i * 9deg) rotateX($i*9deg) rotateZ($i * 3deg);
     box-shadow:0 0 (1px + ($i * 2)) rgba((255 - ($i * 2)),(170 - round($i * .5)),(45 * round($i / 3)), 0.1), inset 0 0 (1px + ($i * 2)) rgba((255 - ($i * 2)),(170 - round($i * .5)),(45 * round($i / 3)), 0.1);
   }
 } 

@@ -1,15 +1,31 @@
 
-$preloader-font-color : white;
-$font-color: white;
-$main-button-fc: white;
+$preloader-font-color : hsla(0, 100%, 100%, 1);
+$font-color: hsla(0, 100%, 100%, 0.9);
+$main-button-fc: hsla(0, 100%, 100%, 0.9);
+$service-page-title-fc: hsla(200, 100%, 86%, 0.95);
+$service-page-name-fc: hsla(0, 100%, 100%, 0.95);
+$service-page-description-fc: hsla(200, 100%, 86%, 0.95);
+$service-page-subtitle-fc: hsla(200, 100%, 86%, 0.95);
+$service-page-button-fc: hsla(200, 100%, 86%, 0.95);
+
 
 $preloader-ff: 'Bebas Neue', sans-serif;
 $header-ff:'Bebas Neue', sans-serif;
 $page-ff:'Bebas Neue', sans-serif;
 $main-button-ff : 'Bebas Neue', sans-serif;
+$service-page-name-ff:  'Bebas Neue', sans-serif;
+$service-page-description-ff:'Cuprum', sans-serif;
 
 $preloader-second-title-fs:200px;
 $preloader-first-title-fs:22px;
 $header-mobile-logo-fs:30px;
 $main-title-fs: 40px;
 $main-button-fs: 26px;
+$service-page-title-fs: 32px;
+$service-page-name-fs: 20px;
+$service-page-description-fs:14px;
+$service-page-subtitle-fs: 18px;
+$service-page-button-fs: 26px;
+
+$service-page-service-bg: hsla(270, 100%, 3%, 0.25);
+$service-page-service-border: hsla(0, 100%, 100%, 0.9);
