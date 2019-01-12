@@ -13,10 +13,14 @@
     
     &__logo {
         z-index: 10;
-        padding-left: 20px;
+        margin-left: 20px;
         font-family: $header-ff;
         font-size: $header-mobile-logo-fs;
         color: white;
+        background: hsla(195, 100%, 0%, 0);
+        border-image: linear-gradient(to right, #b861c6 0%,#b861c6 70%,#ffc7c7 100%);
+        border-image-slice: 1;
+        border-width: 1px; 
         
     }
     &__menu {

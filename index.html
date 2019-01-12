@@ -59,7 +59,7 @@
             <h1 class="preloader__first-title loading wave">креативное агенство</h1>
         </section>
         <header class="header">
-            <h4 class="header__logo">АР</h4>
+            <button class="header__logo" id="header-home-button">АР</button>
             <div class="header__menu">
                 <a href="" class="header__link"></a>
                 <a href="" class="header__link"></a>
@@ -69,7 +69,7 @@
                 <a href="" class="header__link"></a>
             </div>
         </header>
-        <section class="page ">
+        <section class="page active" id="main-page">
             <div class="main">
                 <h2 class="main__title">Что Вас интересует?</h2>
                 <div class="main__buttons">
@@ -82,13 +82,16 @@
                     <button class="main__button" id="button-design">дизайн
                         <div class="main__icons"><img src="/dist/img/icons/graphic_design.svg" alt="графический дизайн" class="main__icon"></div>
                     </button>
+                    <button class="main__button" id="button-whyus">Почему мы?
+                        <div class="main__icons"><img src="/dist/img/icons/whyus.svg" alt="Почему мы?" class="main__icon"></div>
+                    </button>
                 </div>
             </div>
         </section>
-        <section class="page ">
-            <div class="service-page">
+        <section class="page " id="web-dev-page">
+            <div class="service-page" >
                 
-                <h2 class="service-page__title">Мы создаем:</h2>
+                <h2 class="service-page__title">Web development</h2>
                 <div class="service-page__services">
                     <div class="service-page__service">
                         <div class="service-page__info">
@@ -156,10 +159,10 @@
                 <button class="service-page__button">Почему мы?</button>
             </div>
         </section>
-        <section class="page ">
+        <section class="page " id="video-page">
             <div class="service-page">
                
-                <h2 class="service-page__title">Съемка видео</h2>
+                <h2 class="service-page__title">Video production</h2>
                 <div class="service-page__services">
                     <div class="service-page__service">
                         <div class="service-page__info">
@@ -248,10 +251,10 @@
                 <button class="service-page__button">Почему мы?</button>
             </div>
         </section>
-        <section class="page ">
+        <section class="page " id="design-page">
             <div class="service-page">
                
-                <h2 class="service-page__title">Дизайн и фото</h2>
+                <h2 class="service-page__title">Design and photo</h2>
                 <div class="service-page__services">
                     <div class="service-page__service">
                         <div class="service-page__info">
@@ -303,9 +306,48 @@
                 
             </div>
         </section>
-        <section class="page active">
+        <section class="page " id="why-page">
             <div class="why">
-                <h2 class="why__title">?Почему</h2>
+                <h2 class="why__title">?Почему работать с нами?</h2>
+                <h3 class="why__subtitle">В первую очередь мы любим то что делаем, именно поэтому результат нашей работы всегда восхищает наших клиентов.</h3>
+                <div class="why__points">
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Мы профессионалы своего дела</h4>
+                    </div>
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Наша работа это качество мирового уровня</h4>
+                    </div>
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Мы всегда на острие мировых тенденций</h4>
+                    </div>
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Вы получите отлично организованный и выполненный проект</h4>
+                    </div>
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Любой подрядчик сможет далее развивать ваш проект с нашими исходными файлами</h4>
+                    </div>
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Наша работа это прежде всего любовь к тому что мы делаем</h4>
+                    </div>
+                    <div class="why__point">
+                       <img src="" alt="" class="why__icon">
+                        <h4 class="why__name">Нас интересует только первоклассный результат</h4>
+                    </div>
+                </div>
+                <div class="why__description">
+                    <p class="why__article">Одной из ключевых проблем заказчика является поддержание и развитие своего проекта в будущем, особенно при смене подрядчика. Мы работаем для наших клиентов уже много лет и хорошо знаем эту проблему.<br><br>Ключевым отличием в работе с нами является не только высокое качество продукта, но и наш подход к работе и передаче проекта.На выходе вы получите готовую версию заказанного продукта и все исходники в структурированном виде, с комментариями и всеми файлами которые пригодятся вам в дальнейшей работе.<br><br>Таким образом, даже если вы решите в процессе сменить подрядчика, любой компетентный исполнитель без проблем сможет поддерживать и развивать ваш проект в будущем, не тратя время на то, чтобы разбираться и переделывать его изза недобросовестнго подхода к работе предыдущих исполнителей.<br>Работая с нами вы получите качественно сделанный продукт от профессионалов своего дела.</p>
+                </div>
+                <h3 class="why__subtitle">Нам доверяют:</h3>
+                <div class="why__partners">
+                    <img src="" alt="" class="why__icon">
+                    <img src="" alt="" class="why__icon">
+                </div>
             </div>
         </section>
     </main>

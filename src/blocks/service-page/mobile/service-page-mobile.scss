@@ -18,9 +18,9 @@
         color: $service-page-title-fc;
         font-family: $page-ff;
         font-size: $service-page-title-fs;
-        font-weight: bold;
+        
         text-decoration: underline;
-        margin-top: 200px;
+        margin-top: 150px;
         margin-bottom: 30px;
     }
     &__services {
@@ -88,7 +88,7 @@
         color: $service-page-subtitle-fc;
         font-family: $page-ff;
         font-size: $service-page-subtitle-fs;
-        font-weight: bold;
+        
         text-align: center;
         margin-top: 50px;
         margin-bottom: 20px;
@@ -137,6 +137,6 @@
         background: hsla(195, 100%, 0%, 0);
         border-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
         border-image-slice: 1;
-        border-width: 3px; 
+        border-width: 1px; 
     }
 }

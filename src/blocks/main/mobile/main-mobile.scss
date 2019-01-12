@@ -11,7 +11,8 @@
     justify-content: flex-end;
     align-items: center;
     &__title {
-        color: $font-color;
+        z-index: 10;
+        color: $title-font-color;
         font-family: $page-ff;
         font-size: $main-title-fs;
         font-weight: bolder;
@@ -46,7 +47,7 @@
         background: hsla(195, 100%, 0%, 0);
         border-image: linear-gradient(to right, #b861c6 0%,#ffc7c7 100%);
         border-image-slice: 1;
-        border-width: 3px; 
+        border-width: 1px; 
         
          
         

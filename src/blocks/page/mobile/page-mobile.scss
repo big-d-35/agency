@@ -10,9 +10,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    overflow: hidden;
 }
 .active {
     display: flex;
     z-index: 5;
+    animation: 1s ease-out 0s normal forwards 1 opacity-animation-in;
+}
+
+.active-out {
+    display: flex;
+    z-index: 5;
+    animation: 1s ease-in 0s normal forwards 1 opacity-animation-out;
 }
