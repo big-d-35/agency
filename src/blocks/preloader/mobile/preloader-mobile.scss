@@ -1,15 +1,16 @@
 .preloader {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     position: absolute;
     
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 640px;
-    min-width: 320px;
-    width: 100vw;
-    height: 100vh;
-    background: url(/dist/img/bg-preloder.jpg);
+    
+    background: url(/dist/img/bg_preloder.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
