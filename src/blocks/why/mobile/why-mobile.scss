@@ -6,7 +6,7 @@
     min-height: 100vh;
     z-index: 20;
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     
     flex-direction: row;
     justify-content: flex-start;
@@ -16,35 +16,159 @@
     background-position: center;
     background-repeat: no-repeat;
     &__slide {
-        max-width: 640px;
-        min-width: 320px;
+        animation: 0.5s ease-in-out 0s normal forwards 1 opacity-animation-slide-in;
         min-width: 100vw;
-        min-height: 100vh;
         width: 100%;
+        min-height: 100vh;
+        
         height: 100%;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
+    &__slide-active {
+        display: flex;
+    }
+    
     &__title {
         
-        width: 100%;
+        width: 90%;
+        
         color: $why-page-title-fc;
         font-family: $page-ff;
         font-size: $why-page-title-fs;
         text-align: left;
-        display: flex;
-        flex-direction: row;
-        align-items:flex-start;
-        justify-content: center;
+        
         
     }
     &__akcent {
         color: $why-akcent-fc;
         font-size: $why-akcent-fs;
+        font-weight: bolder;
+        
+    }
+    &__subakcent {
+        color: $why-akcent-fc;
+        font-size: $why-subakcent-fs;
+        font-weight: bolder;
+        font-family: $page-ff;
+    }
+    &__subtitle {
+        width: 90%;
+        text-align: left;
+        color: $font-color;
+        font-family: $why-page-subtitle-ff;
+        font-size: $why-page-subtitle-fs;
+        
+    }
+    &__points {
+        width: 90%;
+        height: 300px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__point {
+        border-top: 1px solid $why-akcent-fc;
+        border-bottom: 1px solid $why-akcent-fc;
+        transform: skewY(-2deg);
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    &__name {
+        width: 100%;
+        text-align: left;
+        color: $font-color;
+        font-family: $page-ff;
+        font-size: $why-page-name-fs;
+        
+    }
+    &__nameakcent {
+        
+        
+        text-align:center;
+        color: $why-akcent-fc;
+    }
+    &__icon {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+     &__image {
+         margin-top: 20px;
+        width: 100%;
+        transform: skewY(-2deg);
+        filter: grayscale(100%);
+    }
+   
+    &__description {
+        
+        
+        width: 90%;
+        height:70vh;
+        min-height: 350px;
+        overflow: scroll;
+        font-family: $why-page-subtitle-ff;
+        color: $why-page-description-fc;
+        line-height: 1.1;
+        font-style: italic;
+    }
+    &__description-akcent {
+        color: $why-akcent-fc;
+        font-family: $page-ff;
+        font-size: $why-description-akcent-ff;
         
     }
     
+    &__partners {
+        width: 80%;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: scroll;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__partner {
+        height: 100px;
+        filter: grayscale(100%);
+    }
+    &__button-left {
+        
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        z-index: 20;
+        font-family: $why-button-ff;
+        font-size: $why-button-fs;
+        color: $why-button-left-fc;
+        border: 0px;
+        background: transparent;
+    }
+    &__button-right {
+        
+        position: absolute;
+        left:70px;
+        bottom: 20px;
+        z-index: 20;
+        font-family: $why-button-ff;
+        font-size: $why-button-fs;
+        color: $why-button-right-fc;
+         background: transparent;
+        border: 0px;
+    }
 }
+

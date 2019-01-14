@@ -24,6 +24,7 @@
         margin-bottom: 30px;
     }
     &__services {
+        animation: 1.5s ease-in 0s normal forwards 1 opacity-animation-slide-out;
         width: 80%;
         max-width: 600px;
         min-width: 260px;
@@ -34,18 +35,24 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        background: $service-page-service-bg;
+        background: url(/dist/img/bg_preloder.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-left: 1px solid $service-page-service-border;
     }
     &__service {
+         animation: 1.5s ease-in 0s normal forwards 1 opacity-animation-slide-in;
         width: 90%;
         max-width: 600px;
         min-width: 260px;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 6px;
+        margin-bottom: 50px;
+        
     }
     &__info {
         display: flex;
@@ -55,20 +62,27 @@
         margin-bottom: 10px;
     }
     &__name {
+        width: 100%;
+        
         color: $service-page-name-fc;
         font-family: $service-page-name-ff;
         font-size: $service-page-name-fs;
-        margin-bottom: 4px;
+        margin-bottom:8px;
+        text-shadow: 1px 1px 1px black;
     }
     &__description {
+        width: 100%;
+        
         color: $service-page-description-fc;
         font-family: $service-page-description-ff;
         font-size: $service-page-description-fs;
         font-style: italic;
     }
     &__icon {
-        height: 40px;
+        height: 80px;
+        border: 1px solid $why-akcent-fc;
     }
+   
     &__technology {
         width: 80%;
         max-width: 600px;

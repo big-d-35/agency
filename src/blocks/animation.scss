@@ -43,3 +43,25 @@
   }
 }
 
+
+// Animation SLIDE-IN
+
+@keyframes opacity-animation-slide-in {
+  0% {
+    opacity: 0;
+      transform: translate(450px,0);
+    -webkit-transform: translate(450px,0); /** Chrome & Safari **/
+    -o-transform: translate(450px,0); /** Opera **/
+    -moz-transform: translate(450px,0); /** Firefox **/
+   
+  }
+  100% {
+    opacity: 1;
+   transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+  }
+}
+
+
