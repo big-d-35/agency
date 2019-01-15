@@ -60,30 +60,26 @@
         </section>
         <header class="header">
             <button class="header__logo" id="header-home-button">АР</button>
-            <div class="header__menu">
-                <a href="" class="header__link"></a>
-                <a href="" class="header__link"></a>
-                <a href="" class="header__link"></a>
-                <a href="" class="header__link"></a>
-                <a href="" class="header__link"></a>
-                <a href="" class="header__link"></a>
-            </div>
+            <button class="header__menu" id="header-contact-button">контакты</button>
         </header>
-        <section class="page " id="main-page">
+        <section class="page active" id="main-page">
             <div class="main">
                 <h2 class="main__title">Что Вас интересует?</h2>
                 <div class="main__buttons">
                     <button class="main__button" id="button-webdev">веб разработка
-                        <div class="main__icons"><img src="/dist/img/icons/web_develop.svg" alt="web разработка" class="main__icon"></div>
+                        <div class="main__icons">
+                            <img src="/dist/img/main/webdev.jpg" alt="web разработка" class="main__icon">
+                        </div>
                     </button>
+                    
                     <button class="main__button" id="button-video">видео контент
-                        <div class="main__icons"><img src="/dist/img/icons/video.svg" alt="разработка видео контента" class="main__icon"></div>
+                        <div class="main__icons"><img src="/dist/img/main/video.jpg" alt="разработка видео контента" class="main__icon"></div>
                     </button>
                     <button class="main__button" id="button-design">дизайн
-                        <div class="main__icons"><img src="/dist/img/icons/graphic_design.svg" alt="графический дизайн" class="main__icon"></div>
+                        <div class="main__icons"><img src="/dist/img/main/design.jpg" alt="графический дизайн" class="main__icon"></div>
                     </button>
                     <button class="main__button" id="button-whyus">Почему выбирают нас
-                        <div class="main__icons"><img src="/dist/img/icons/whyus.svg" alt="Почему мы?" class="main__icon"></div>
+                        <div class="main__icons"><img src="/dist/img/main/whyus.jpg" alt="Почему мы?" class="main__icon"></div>
                     </button>
                 </div>
             </div>
@@ -306,7 +302,7 @@
                 
             </div>
         </section>
-        <section class="page active" id="why-page">
+        <section class="page" id="why-page">
             <div class="why">
                <div class="why__slide why__slide-active">
                     <h2 class="why__title">Почему</h2>
@@ -416,8 +412,39 @@
             <button class="why__button-left" id="why-left-button">назад</button>
             <button class="why__button-right" id="why-right-button">вперед</button>
         </section>
+        <section class="page  " id="contacts-page">
+            <div class="contacts">
+                <div class="contacts__blocks">
+                    <img src="" alt="" class="contacts__icon">
+                    <a href="tel:84993901960" class="contacts__link">По<span class="contacts__akcent">звоните</span></a>
+                </div>
+                <div class="contacts__blocks">
+                    <h4 class="contacts__title"><span class="contacts__akcent">или</span> напишите <span class="contacts__akcent">здесь</span></h4>
+                    <form class="contacts__form">
+
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Rodionov Agency">
+                        <input type="hidden" name="admin_email" value="alex.rodionov.xxxx@gmail.com">
+                        <input type="hidden" name="form_subject" value="Заявка с сайта">
+                        <!-- END Hidden Required Fields -->
+
+                        <input class="contacts__input" type="text" name="Name" placeholder="Ваше имя..." required><br>
+                        <input class="contacts__input" type="text" name="E-mail" placeholder="Ваш E-mail..." ><br>
+                        <input class="contacts__input" type="text" name="Phone" placeholder="Ваш телефон..." required><br>
+                        <button class="contacts__button">Отправить</button>
+
+	               </form>
+                </div>
+                
+            </div>
+        </section>
     </main>
     <script src="canvas.js"></script>
     <script src="main.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="dist/script.js"></script>
 </body>
 </html>

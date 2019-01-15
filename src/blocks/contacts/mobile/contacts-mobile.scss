@@ -1,0 +1,76 @@
+.contacts {
+    max-width: 640px;
+    min-width: 320px;
+    width: 100vw;
+    height: 100%;
+    min-height: 100vh;
+    z-index: 30;
+    
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: url(/dist/img/bg_preloder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+    &__blocks {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &__link {
+        text-decoration: none;
+        color:$header-menu-fc;
+        font-family: $header-ff;
+        font-size: $contacts-link-fs;
+        border-bottom: 1px solid $font-color;
+    }
+    &__akcent {
+        color: $why-akcent-fc;
+    }
+    
+    &__title {
+        font-family: $page-ff;
+        color:$header-menu-fc;
+        font-size: $contacts-form-title-fs;
+        margin-bottom: 10px;
+    }
+    
+    &__form{
+        width: 100%;
+        
+    }
+    &__input {
+        width: 50%;
+        background: transparent;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 2px;
+        text-align: center;
+        color: $font-color;
+        font-family: $page-ff;
+        font-size: $contacts-page-input-fs;
+        border-image: linear-gradient(to right, hsla(292, 47%, 58%, 1) 0%,hsla(292, 47%, 58%, 1) 100%);
+        border-image-slice: 1;
+        border-width: 1px; 
+    }
+    &__button {
+        width: 50%;
+        background: transparent;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 2px;
+        text-align: center;
+        color: $font-color;
+        font-family: $page-ff;
+        font-size: $contacts-page-input-fs;
+        border-image: linear-gradient(to right, hsla(292, 47%, 58%, 1) 0%,hsla(292, 47%, 58%, 1) 100%);
+        border-image-slice: 1;
+        border-width: 1px; 
+    }
+}

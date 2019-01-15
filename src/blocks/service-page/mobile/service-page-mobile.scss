@@ -24,7 +24,7 @@
         margin-bottom: 30px;
     }
     &__services {
-        animation: 1.5s ease-in 0s normal forwards 1 opacity-animation-slide-out;
+        animation: 0.8s ease-in 0s normal forwards 1 opacity-animation-slide-in;
         width: 80%;
         max-width: 600px;
         min-width: 260px;
@@ -35,14 +35,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        background: url(/dist/img/bg_preloder.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-left: 1px solid $service-page-service-border;
+        
     }
     &__service {
-         animation: 1.5s ease-in 0s normal forwards 1 opacity-animation-slide-in;
+         animation: 1.5s ease-in 0s normal forwards 1 opacity-animation-fade-in;
         width: 90%;
         max-width: 600px;
         min-width: 260px;
@@ -50,9 +46,14 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        margin-left: 6px;
+        padding: 10px;
         margin-bottom: 50px;
         
+        background: url(/dist/img/bg_preloder.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid $service-page-service-border;
     }
     &__info {
         display: flex;
@@ -79,8 +80,8 @@
         font-style: italic;
     }
     &__icon {
-        height: 80px;
-        border: 1px solid $why-akcent-fc;
+        height: 40px;
+        
     }
    
     &__technology {

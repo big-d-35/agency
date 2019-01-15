@@ -30,10 +30,11 @@
     
     &__slide-active {
         display: flex;
+        animation: 0.5s ease-in 0s normal forwards 1 opacity-animation-fade-in;
     }
     
     &__title {
-        
+        animation: 2s ease-in 0s normal forwards 1 opacity-animation-fade-in;
         width: 90%;
         
         color: $why-page-title-fc;
@@ -121,6 +122,7 @@
         overflow: scroll;
         font-family: $why-page-subtitle-ff;
         color: $why-page-description-fc;
+        font-size : $why-page-description-fs;
         line-height: 1.1;
         font-style: italic;
     }
