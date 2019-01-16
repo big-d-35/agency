@@ -20,8 +20,15 @@
         font-size: $service-page-title-fs;
         
         text-decoration: underline;
-        margin-top: 150px;
+        margin-top:80px;
         margin-bottom: 30px;
+    }
+    &__poster {
+        width: 90%;
+        transform: skewX(2deg);
+        filter: grayscale(100%);
+        margin-bottom: 20px;
+         
     }
     &__services {
         animation: 0.8s ease-in 0s normal forwards 1 opacity-animation-slide-in;
@@ -43,24 +50,32 @@
         max-width: 600px;
         min-width: 260px;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: flex-start;
         padding: 10px;
         margin-bottom: 50px;
+        transform: skewX(2deg);
         
-        background: url(/dist/img/bg_preloder.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 1px solid $service-page-service-border;
+        border-bottom: 1px solid $service-page-service-border;
+        border-top: 1px solid $service-page-service-border;
     }
     &__info {
+        width: 80%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         margin-bottom: 10px;
+        
+    }
+    &__number-of-service {
+        
+        font-family: $page-ff;
+        font-size: $service-number-fs;
+        color: $why-akcent-fc;
+        font-weight: bolder;
+        
     }
     &__name {
         width: 100%;
@@ -78,6 +93,7 @@
         font-family: $service-page-description-ff;
         font-size: $service-page-description-fs;
         font-style: italic;
+        margin-bottom: 6px;
     }
     &__icon {
         height: 40px;
@@ -105,7 +121,7 @@
         font-size: $service-page-subtitle-fs;
         
         text-align: center;
-        margin-top: 50px;
+        margin-top: 10px;
         margin-bottom: 20px;
     }
     &__instruments {

@@ -11,11 +11,12 @@ const videoPage = document.getElementById('video-page');
 const designPage = document.getElementById('design-page');
 const whyPage = document.getElementById('why-page');
 const contactsPage = document.getElementById('contacts-page');
+const aboutPage = document.getElementById('about-page');
 
 const whyPageLeftButton = document.getElementById('why-left-button');
 const whyPageRightButton = document.getElementById('why-right-button');
 const headerContactButton = document.getElementById('header-contact-button');
-
+const headerAboutButton = document.getElementById('header-about-button');
 
 //preloader
 window.onload = setTimeout(function(){
@@ -23,6 +24,16 @@ window.onload = setTimeout(function(){
  }, 3900);
 
 //preloader
+
+
+headerAboutButton.onclick = function() {
+    let activeSlideNow = document.querySelector('.active');
+    activeSlideNow.classList.remove('active');
+    aboutPage.classList.toggle('active');
+    
+    
+}
+
 
 headerContactButton.onclick = function() {
     let activeSlideNow = document.querySelector('.active');
@@ -33,6 +44,7 @@ headerContactButton.onclick = function() {
 }
 
 headerHomeButton.onclick = function() {
+    aboutPage.classList.remove('active');
     contactsPage.classList.remove('active');
     webDevPage.classList.remove('active');
     videoPage.classList.remove('active');

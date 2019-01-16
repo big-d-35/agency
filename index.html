@@ -60,27 +60,30 @@
         </section>
         <header class="header">
             <button class="header__logo" id="header-home-button">АР</button>
-            <button class="header__menu" id="header-contact-button">контакты</button>
+            <div class="header__menu">
+                <button class="header__contact" id="header-about-button">о компании</button>
+                <button class="header__contact" id="header-contact-button">контакты</button>
+            </div>
+            
         </header>
         <section class="page active" id="main-page">
             <div class="main">
                 <h2 class="main__title">Что Вас интересует?</h2>
                 <div class="main__buttons">
-                    <button class="main__button" id="button-webdev">веб разработка
-                        <div class="main__icons">
-                            <img src="/dist/img/main/webdev.jpg" alt="web разработка" class="main__icon">
-                        </div>
-                    </button>
-                    
-                    <button class="main__button" id="button-video">видео контент
-                        <div class="main__icons"><img src="/dist/img/main/video.jpg" alt="разработка видео контента" class="main__icon"></div>
-                    </button>
-                    <button class="main__button" id="button-design">дизайн
-                        <div class="main__icons"><img src="/dist/img/main/design.jpg" alt="графический дизайн" class="main__icon"></div>
-                    </button>
-                    <button class="main__button" id="button-whyus">Почему выбирают нас
-                        <div class="main__icons"><img src="/dist/img/main/whyus.jpg" alt="Почему мы?" class="main__icon"></div>
-                    </button>
+                   
+                    <button class="main__button" id="button-webdev">веб разработка</button>
+                </div>
+                <div class="main__buttons">
+                  
+                    <button class="main__button" id="button-video">видео контент</button>
+                </div>
+                <div class="main__buttons">
+                   
+                    <button class="main__button" id="button-design">дизайн </button>
+                </div>
+                <div class="main__buttons">
+                   
+                    <button class="main__button" id="button-whyus">Почему выбирают нас</button>
                 </div>
             </div>
         </section>
@@ -88,27 +91,32 @@
             <div class="service-page" >
                 
                 <h2 class="service-page__title">Web development</h2>
+                <img src="/dist/img/main/service-webdev.jpg" alt="" class="service-page__poster">
                 <div class="service-page__services">
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Одностраничные приложения</h3>
                             <p class="service-page__description">Single-page application (SPA)</p>
+                            <img src="dist/img/icons/services/spa.png" alt="Single-page app" class="service-page__icon">
                         </div>
-                        <img src="dist/img/icons/services/spa.png" alt="Single-page app" class="service-page__icon">
+                        <span class="service-page__number-of-service">1</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Многостраничные приложения</h3>
                             <p class="service-page__description">Multiple-page application (MPA)</p>
+                            <img src="dist/img/icons/services/mpa.png" alt="Multiple-page app" class="service-page__icon">
                         </div>
-                        <img src="dist/img/icons/services/mpa.png" alt="Multiple-page app" class="service-page__icon">
+                        <span class="service-page__number-of-service">2</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Лендинги - посадочные страницы</h3>
                             <p class="service-page__description">Landing page (LP)</p>
+                            <img src="dist/img/icons/services/lp.png" alt="Landing Page" class="service-page__icon">
                         </div>
-                        <img src="dist/img/icons/services/lp.png" alt="Landing Page" class="service-page__icon">
+                        
+                         <span class="service-page__number-of-service">3</span>
                     </div>
                 </div>
                 <div class="service-page__technology">
@@ -157,50 +165,58 @@
         </section>
         <section class="page " id="video-page">
             <div class="service-page">
-               
                 <h2 class="service-page__title">Video production</h2>
+                 <img src="/dist/img/main/service-video.jpg" alt="" class="service-page__poster">
+
                 <div class="service-page__services">
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Имиджевое видео</h3>
                             <p class="service-page__description">Для компаний и физических лиц</p>
+                             <img src="/dist/img/icons/services/video/imidg_video.svg" alt="Имиджевые видео" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/video/imidg_video.svg" alt="Имиджевые видео" class="service-page__icon">
+                        <span class="service-page__number-of-service">1</span>
+                       
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Заставки и промо ролики</h3>
                             <p class="service-page__description">Для того чтобы впечатлить ваших зрителей</p>
+                             <img src="/dist/img/icons/services/video/promo_video.svg" alt="Promo Video" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/video/promo_video.svg" alt="Promo Video" class="service-page__icon">
+                        <span class="service-page__number-of-service">2</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Титры и графика для эфира</h3>
                             <p class="service-page__description">Для того чтобы ваши видео выглядили как профессиональный продукт</p>
+                             <img src="/dist/img/icons/services/video/titles.svg" alt="Титры" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/video/titles.svg" alt="Титры" class="service-page__icon">
+                        <span class="service-page__number-of-service">3</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Обучающие видео</h3>
                             <p class="service-page__description">Чтобы донести информацию просто и понятно</p>
+                             <img src="/dist/img/icons/services/video/learn.svg" alt="Обучающие видео" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/video/learn.svg" alt="Обучающие видео" class="service-page__icon">
+                        <span class="service-page__number-of-service">4</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Презентации</h3>
                             <p class="service-page__description">Для партнеров, клиентов, сотрудников </p>
+                            <img src="/dist/img/icons/services/video/presentation.svg" alt="Презентации" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/video/presentation.svg" alt="Презентации" class="service-page__icon">
+                         <span class="service-page__number-of-service">5</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Контент для социальных сетей</h3>
                             <p class="service-page__description">Чтобы ваши клиенты узнали больше о вашем бизнесе</p>
+                             <img src="/dist/img/icons/services/video/social.svg" alt="Контент для соц сетей" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/video/social.svg" alt="Контент для соц сетей" class="service-page__icon">
+                        <span class="service-page__number-of-service">6</span>
                     </div>
                 </div>
                 <div class="service-page__technology">
@@ -251,27 +267,31 @@
             <div class="service-page">
                
                 <h2 class="service-page__title">Design and photo</h2>
+                <img src="/dist/img/main/service-design.jpg" alt="" class="service-page__poster">
                 <div class="service-page__services">
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Графический дизайн</h3>
                             <p class="service-page__description">Фирменный стиль, логотипы, сувенирная продукция и любые другие потребности вашего бизнеса</p>
+                            <img src="/dist/img/icons/services/design/Design_Graphic.svg" alt="Design Graphic" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/design/Design_Graphic.svg" alt="Design Graphic" class="service-page__icon">
+                        <span class="service-page__number-of-service">1</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">WEB дизайн</h3>
                             <p class="service-page__description">Современное трендовое представление вашей компании в сети</p>
+                            <img src="/dist/img/icons/services/design/Adaptive_design.svg" alt="Web Design" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/design/Adaptive_design.svg" alt="Web Design" class="service-page__icon">
+                        <span class="service-page__number-of-service">2</span>
                     </div>
                     <div class="service-page__service">
                         <div class="service-page__info">
                             <h3 class="service-page__name">Фотосессии</h3>
                             <p class="service-page__description">Съемка для журналов, репортажей или для домашней коллекции</p>
+                            <img src="/dist/img/icons/services/design/photo.svg" alt="Фотосессии" class="service-page__icon">
                         </div>
-                        <img src="/dist/img/icons/services/design/photo.svg" alt="Фотосессии" class="service-page__icon">
+                        <span class="service-page__number-of-service">3</span>
                     </div>
                 </div>
                 <div class="service-page__technology">
@@ -436,6 +456,32 @@
 	               </form>
                 </div>
                 
+            </div>
+        </section>
+        <section class="page " id="about-page">
+            <div class="about">
+                <div class="about__names">
+                    <h2 class="about__title">Команда</h2>
+                    <h3 class="about__vacancy">Арт директор</h3>
+                    <h4 class="about__name">Александр Родионов</h4>
+                    <h3 class="about__vacancy">Дизайн</h3>
+                    <h4 class="about__name">Марина Фролова</h4>
+                    <h4 class="about__name">Андрей Паливода</h4>
+                    <h4 class="about__name">Элен Яши</h4>
+                    <h3 class="about__vacancy">Разработка</h3>
+                    <h4 class="about__name">Александр Гусаров</h4>
+                    <h4 class="about__name">Кирилл Каплин</h4>
+                    <h4 class="about__name">Андрей Куприянов</h4>
+                    <h4 class="about__name">Сергей Костин</h4>
+                    <h3 class="about__vacancy">Видео</h3>
+                    <h4 class="about__name">Марат Шафин</h4>
+                    <h4 class="about__name">Константин Краснов</h4>
+
+                    <h3 class="about__vacancy">Фото</h3>
+                    <h4 class="about__name">Анастасия Иванова</h4>
+                    <h4 class="about__name">Алексей Широков</h4>
+                
+                </div>
             </div>
         </section>
     </main>

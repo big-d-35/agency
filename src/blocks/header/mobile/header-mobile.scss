@@ -28,6 +28,12 @@
         opacity: 0;
     }
     &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    &__contact {
         z-index: 11;
         margin-right: 20px;
         font-family: $header-ff;
