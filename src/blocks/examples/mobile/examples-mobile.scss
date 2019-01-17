@@ -1,0 +1,104 @@
+.examples {
+    width: 100vw;
+    height: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    background-size: cover;
+    background: url(/dist/img/bg_preloder.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 5;
+    &__title {
+        width: 90%;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        text-align: left;
+        font-family: $page-ff;
+        color: $font-color;
+        font-size: $examples-page-fs;
+        
+    }
+    &__block {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        width: 90%;
+        min-width: 280px;
+        max-width: 580px;
+        margin-bottom: 60px;
+        border-bottom: 1px solid $font-color;
+        border-top: 1px solid $font-color;
+    }
+    &__name {
+        font-family: $page-ff;
+        color:  $service-page-title-fc;
+        font-size: $examples-page-name-fs;
+        
+    }
+    &__images {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: row;
+        
+        
+        overflow: scroll;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    &__img {
+        width: 100%;
+        min-width: 280px;
+        max-width: 580px;
+    }
+    &__video {
+        width: 100%;
+    }
+    &__scroll {
+        font-family: $page-ff;
+        color: $service-page-title-fc;
+        font-size: $examples-scroll-fs;
+        margin-bottom: 10px;
+    }
+    &__description {
+        width: 100%;
+        font-family: $service-page-description-ff;
+        color: $font-color;
+        font-size: $examples-page-description-fs;
+        margin-bottom: 20px;
+    }
+    &__tags {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+    &__tag {
+        margin-right: 10px;
+        font-family: $page-ff;
+        color: $service-page-title-fc;
+        font-size: $examples-tag-fs;
+    }
+    &__reference {
+        width: 90%;
+        font-family: $header-ff;
+        color:$font-color;
+        font-size: $examples-reference-fs;
+        margin-bottom: 20px;
+    }
+    &__link-reference {
+        color:$why-akcent-fc;
+        cursor: pointer;
+    }
+}

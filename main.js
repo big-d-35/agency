@@ -3,7 +3,10 @@ const headerHomeButton = document.getElementById('header-home-button');
 const webDevButton = document.getElementById('button-webdev');
 const videoButton = document.getElementById('button-video');
 const designButton = document.getElementById('button-design');
-const whyusButton = document.getElementById('button-whyus');
+const whyUsButton = document.getElementById('button-whyus');
+const webDevExamplesButton = document.getElementById('web-dev-examples-button');
+const videoExamplesButton = document.getElementById('video-examples-button');
+const designExamplesButton = document.getElementById('design-examples-button');
 
 const mainPage = document.getElementById('main-page');
 const webDevPage = document.getElementById('web-dev-page');
@@ -12,11 +15,15 @@ const designPage = document.getElementById('design-page');
 const whyPage = document.getElementById('why-page');
 const contactsPage = document.getElementById('contacts-page');
 const aboutPage = document.getElementById('about-page');
+const webDevExamplesPage = document.getElementById('webdev-examples-page');
+const videoExamplesPage = document.getElementById('video-examples-page');
+const designExamplesPage = document.getElementById('design-examples-page');
 
 const whyPageLeftButton = document.getElementById('why-left-button');
 const whyPageRightButton = document.getElementById('why-right-button');
 const headerContactButton = document.getElementById('header-contact-button');
 const headerAboutButton = document.getElementById('header-about-button');
+
 
 //preloader
 window.onload = setTimeout(function(){
@@ -25,7 +32,7 @@ window.onload = setTimeout(function(){
 
 //preloader
 
-
+//кнопки Хедера
 headerAboutButton.onclick = function() {
     let activeSlideNow = document.querySelector('.active');
     activeSlideNow.classList.remove('active');
@@ -44,16 +51,19 @@ headerContactButton.onclick = function() {
 }
 
 headerHomeButton.onclick = function() {
+    videoExamplesPage.classList.remove('active');
     aboutPage.classList.remove('active');
     contactsPage.classList.remove('active');
     webDevPage.classList.remove('active');
     videoPage.classList.remove('active');
     designPage.classList.remove('active');
     whyPage.classList.remove('active');
+    webDevExamplesPage.classList.remove('active');
     mainPage.classList.add('active');
 }
+//кнопки Хедера
 
-
+//кнопки страниц
 webDevButton.onclick = function() {
     
     mainPage.classList.remove('active');
@@ -75,12 +85,27 @@ designButton.onclick = function() {
     designPage.classList.add('active');
 }
 
-whyusButton.onclick = function() {
+whyUsButton.onclick = function() {
     mainPage.classList.remove('active');
     
     whyPage.classList.add('active');
 }
 
+webDevExamplesButton.onclick = function(){
+    webDevPage.classList.remove('active');
+    webDevExamplesPage.classList.add('active');
+}
+
+videoExamplesButton.onclick = function(){
+    videoPage.classList.remove('active');
+    videoExamplesPage.classList.add('active');
+}
+
+designExamplesButton.onclick = function(){
+    designPage.classList.remove('active');
+    designExamplesPage.classList.add('active');
+}
+//кнопки страниц
 
 //slideshow
 
