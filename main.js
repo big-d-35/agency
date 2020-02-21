@@ -70,7 +70,7 @@ whyusButton.onclick = function() {
 }
 
 
-//slideshow
+//SLIDESHOW
 
 let slides = document.getElementsByClassName('why__slide');
 let index = 0;
